@@ -5,10 +5,10 @@ on: [push, pull_request]
 jobs:
   check-php:
     name: Setup PHP
-      uses: shivammathur/setup-php@v2
-      with:
-        php-version: '8.2'
-        tools: psalm
+    uses: shivammathur/setup-php@v2
+    with:
+      php-version: '8.2'
+      tools: psalm
 
-    name: Run Psalm
-      run: psalm --output-format=github
+  name: Run Psalm
+  run: psalm --output-format=github
